@@ -101,6 +101,7 @@ int menu_3(int *sel)
 
 int main()
 {
+	/*设置信号处理函数*/
 	struct sigaction action;
 	sigaction(SIGPIPE, 0, &action);
 	action.sa_handler = my_func;
